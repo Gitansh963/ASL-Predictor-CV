@@ -1,25 +1,22 @@
-# American Sign Language (ASL) Predictor
+# ASL Predictor
 
-## Overview
-This repository contains an ASL predictor application built using computer vision and deep learning techniques. The application is capable of recognizing and interpreting American Sign Language (ASL) from live video feed.
+ASL Predictor is an open-source application that leverages computer vision and deep learning to recognize American Sign Language (ASL) gestures from live webcam feed. This application can be a useful tool for learning and practicing ASL, and it can also facilitate communication with individuals who are deaf or hard-of-hearing.
 
-## Data
-The data used for training the model can be downloaded from here.
+## Installation and Usage
 
-## Model
-The trained model can be downloaded from here.
+To use this application, you need to download the data, the model, and the scripts. You also need to install the required packages.
 
-## Files
-The repository contains three Python files:
-1. `data_american.py`: This file is used for data preparation.
-2. `second.py`: This file is used for model building and training.
-3. `three.py`: This file is used for the computer vision live demo.
+### Prerequisites
 
-## Requirements
-All the required packages are listed in the `requirements.txt` file.
+- Download the data from the American Sign Language [Dataset](https://www.kaggle.com/datasets/prathumarikeri/american-sign-language-09az).
+- Download the model from American [Model](https://firebasestorage.googleapis.com/v0/b/american-sign-language-7e378.appspot.com/o/american_model.h5?alt=media&token=7553a597-fa46-4228-a3f2-199086fecbf2)
+- Clone the ASL Predictor Repository to your local machine.
+- Install the required packages by running the following command in your anaconda terminal:
 
-## Usage
-To use this application, first clone the repository and install the necessary packages from `requirements.txt`. Then, download the data and the trained model using the provided links. Run the Python files in the following order: `data_american.py`, `second.py`, `three.py`.
-
-## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+```bash
+conda create --name <env> --file requirements.txt
+```
+###Running the Application
+-Run the data_american.py script to preprocess the data and create the labels.
+-Run the second.py script to build and train the model. Alternatively, you can load the pretrained model from the american_model.h5 file.
+-Run the three.py script to launch the application. A window will open displaying your webcam feed and the predicted ASL gesture.
