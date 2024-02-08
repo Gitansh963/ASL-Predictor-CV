@@ -16,7 +16,7 @@ To use this application, you need to download the data, the model, and the scrip
 ```bash
 conda create --name <env> --file requirements.txt
 ```
-###Running the Application
+### Running the Application
 -Run the data_american.py script to preprocess the data and create the labels.
 -Run the second.py script to build and train the model. Alternatively, you can load the pretrained model from the american_model.h5 file.
 -Run the three.py script to launch the application. A window will open displaying your webcam feed and the predicted ASL gesture.
